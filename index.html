@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StuCo - Tools</title>
+    <title>StuCo - Contacts</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,32 +18,51 @@
         </div>
     </header>
 
-    <!-- Main Content Area for Tools -->
-    <main class="tools-container">
-        <h2>Tools</h2>
+    <!-- Filter Section -->
+    <div class="filter-container">
+        <select class="filter" id="filter-school">
+            <option value="">Filter by School</option>
+            <option value="school1">School 1</option>
+            <option value="school2">School 2</option>
+            <!-- Add more school options here -->
+        </select>
 
-        <!-- Tool 1: GPA Calculator -->
-        <div class="tool-item">
-            <h3>GPA Calculator</h3>
-            <p>Calculate your GPA easily by entering your grades and course credits.</p>
-            <button class="tool-button">Use GPA Calculator</button>
+        <select class="filter" id="filter-year">
+            <option value="">Filter by Year</option>
+            <option value="freshman">Freshman</option>
+            <option value="sophomore">Sophomore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+        </select>
+
+        <select class="filter" id="filter-regularity">
+            <option value="">Filter by Regularity</option>
+            <option value="often">Chat Often</option>
+            <option value="sometimes">Chat Sometimes</option>
+            <option value="rarely">Chat Rarely</option>
+        </select>
+    </div>
+
+    <!-- Main Content Area for Contacts -->
+    <main class="contacts-container">
+        <!-- Example Contact Item -->
+        <div class="contact-item">
+            <img src="anonymous-profile.png" alt="Profile" class="contact-pic">
+            <div class="contact-info">
+                <p class="contact-name">John Doe</p>
+                <p class="contact-details">Harvard University, USA</p>
+            </div>
         </div>
 
-        <!-- Tool 2: Schedule Planner -->
-        <div class="tool-item">
-            <h3>Schedule Planner</h3>
-            <p>Organize your weekly schedule to manage your time better.</p>
-            <button class="tool-button">Use Schedule Planner</button>
+        <div class="contact-item">
+            <img src="anonymous-profile.png" alt="Profile" class="contact-pic">
+            <div class="contact-info">
+                <p class="contact-name">Jane Smith</p>
+                <p class="contact-details">Stanford University, USA</p>
+            </div>
         </div>
 
-        <!-- Tool 3: College Application Tracker -->
-        <div class="tool-item">
-            <h3>College Application Tracker</h3>
-            <p>Track your college applications and deadlines in one place.</p>
-            <button class="tool-button">Use Application Tracker</button>
-        </div>
-
-        <!-- Add more tools here as needed -->
+        <!-- Add more contact items here -->
     </main>
 
     <!-- Bottom Navigation Bar (Same as Home) -->
@@ -54,4 +73,18 @@
                 Messages
             </span>
             <span class="nav-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin​⬤
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M4 12v4a2 2 0 0 0 2 2h3"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                Tools
+            </span>
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                Contacts
+            </span>
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M4 12v4a2 2 0 0 0 2 2h3"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                Posts
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
