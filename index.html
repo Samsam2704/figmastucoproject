@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StuCo - Contacts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar (Same as Home) -->
+    <header>
+        <div class="top-bar">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <div class="profile-info">
+                <img src="anonymous-profile.png" alt="Profile" class="profile-pic">
+                <p>Username</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <div class="filter-container">
+        <select class="filter" id="filter-school">
+            <option value="">Filter by School</option>
+            <option value="school1">School 1</option>
+            <option value="school2">School 2</option>
+            <!-- Add more school options here -->
+        </select>
+
+        <select class="filter" id="filter-year">
+            <option value="">Filter by Year</option>
+            <option value="freshman">Freshman</option>
+            <option value="sophomore">Sophomore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+        </select>
+
+        <select class="filter" id="filter-regularity">
+            <option value="">Filter by Regularity</option>
+            <option value="often">Chat Often</option>
+            <option value="sometimes">Chat Sometimes</option>
+            <option value="rarely">Chat Rarely</option>
+        </select>
+    </div>
+
+    <!-- Main Content Area for Contacts -->
+    <main class="contacts-container">
+        <!-- Example Contact Item -->
+        <div class="contact-item">
+            <img src="anonymous-profile.png" alt="Profile" class="contact-pic">
+            <div class="contact-info">
+                <p class="contact-name">John Doe</p>
+                <p class="contact-details">Harvard University, USA</p>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <img src="anonymous-profile.png" alt="Profile" class="contact-pic">
+            <div class="contact-info">
+                <p class="contact-name">Jane Smith</p>
+                <p class="contact-details">Stanford University, USA</p>
+            </div>
+        </div>
+
+        <!-- Add more contact items here -->
+    </main>
+
+    <!-- Bottom Navigation Bar (Same as Home) -->
+    <footer>
+        <div class="bottom-bar">
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                Messages
+            </span>
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M4 12v4a2 2 0 0 0 2 2h3"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                Tools
+            </span>
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                Contacts
+            </span>
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M4 12v4a2 2 0 0 0 2 2h3"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                Posts
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
