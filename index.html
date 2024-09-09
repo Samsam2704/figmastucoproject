@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StuCo - Home</title>
+    <title>StuCo - Messages</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Top Navigation Bar -->
+    <!-- Top Navigation Bar (Same as Home) -->
     <header>
         <div class="top-bar">
             <input type="text" class="search-bar" placeholder="Search...">
@@ -18,73 +18,70 @@
         </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main>
-        <div class="container">
-            <!-- Left Side (Posts/Interesting Facts) -->
-            <section class="main-content">
-                <article class="post">
-                    <!-- Post Upper Bar -->
-                    <div class="post-header">
-                        <span class="post-time">2 hours ago</span>
-                        <div class="post-user-info">
-                            <img src="anonymous-profile.png" alt="Poster Profile" class="post-profile-pic">
-                            <p>Poster Name</p>
-                        </div>
-                    </div>
-
-                    <!-- Post Content -->
-                    <h3>Interesting Statistics from US Schools</h3>
-                    <p>Statistics about acceptance rates, SAT scores, etc.</p>
-
-                    <!-- Post Action Icons -->
-                    <div class="post-icons">
-                        <!-- React (Thumbs Up) -->
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M14 9V5a3 3 0 0 1 3-3h3a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-7l-2 9H5V12h4l2-3h3z"></path></svg>
-                        </span>
-
-                        <!-- Comment (Speech Bubble) -->
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                        </span>
-
-                        <!-- Share (Arrow) -->
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M4 12v4a2 2 0 0 0 2 2h3"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
-                        </span>
-
-                        <!-- Save (Pin/Bookmark) -->
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
-                        </span>
-                    </div>
-
-                    <!-- Comment Input Section -->
-                    <div class="comment-section">
-                        <input type="text" class="comment-box" placeholder="Write a comment...">
-                    </div>
-                </article>
-
-                <!-- More posts can go here -->
-            </section>
-
-            <!-- Right Side (Profile Recommendations) -->
-            <aside class="profile-recommendations">
-                <h3>Recommended Profiles</h3>
-                <div class="profile-recommendation">
-                    <img src="anonymous-profile.png" alt="Profile" class="small-profile-pic">
-                    <p>Profile 1</p>
+    <!-- Main Content Area for Messages -->
+    <main class="messages-container">
+        <!-- Left: Conversations List -->
+        <section class="conversations-list">
+            <!-- Example conversation item -->
+            <div class="conversation">
+                <img src="anonymous-profile.png" alt="Profile" class="conversation-pic">
+                <div class="conversation-info">
+                    <p class="conversation-name">John Doe</p>
+                    <p class="last-message">Hey, how are you?</p>
                 </div>
-                <div class="profile-recommendation">
-                    <img src="anonymous-profile.png" alt="Profile" class="small-profile-pic">
-                    <p>Profile 2</p>
+                <div class="conversation-meta">
+                    <p class="message-time">2h ago</p>
                 </div>
-            </aside>
-        </div>
+            </div>
+
+            <div class="conversation">
+                <img src="anonymous-profile.png" alt="Profile" class="conversation-pic">
+                <div class="conversation-info">
+                    <p class="conversation-name">College Group</p>
+                    <p class="last-message">Meeting is at 4pm.</p>
+                </div>
+                <div class="conversation-meta">
+                    <p class="message-time">30m ago</p>
+                </div>
+            </div>
+
+            <!-- Add more conversations here -->
+        </section>
+
+        <!-- Right: Chat Area -->
+        <section class="chat-view">
+            <!-- Chat with specific person -->
+            <div class="chat-header">
+                <img src="anonymous-profile.png" alt="Profile" class="chat-profile-pic">
+                <p class="chat-profile-name">John Doe</p>
+            </div>
+
+            <!-- Messages -->
+            <div class="chat-messages">
+                <!-- Example message (received) -->
+                <div class="message received">
+                    <p class="message-content">Hey, how are you?</p>
+                    <p class="message-time">2:15 PM</p>
+                </div>
+
+                <!-- Example message (sent) -->
+                <div class="message sent">
+                    <p class="message-content">I'm good! How about you?</p>
+                    <p class="message-time">2:17 PM</p>
+                </div>
+
+                <!-- More messages can go here -->
+            </div>
+
+            <!-- Message Input Box -->
+            <div class="message-input">
+                <input type="text" class="message-box" placeholder="Type a message...">
+                <button class="send-button">Send</button>
+            </div>
+        </section>
     </main>
 
-    <!-- Bottom Navigation Bar -->
+    <!-- Bottom Navigation Bar (Same as Home) -->
     <footer>
         <div class="bottom-bar">
             <span class="nav-icon">
