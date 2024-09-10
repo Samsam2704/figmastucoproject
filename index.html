@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StuCo - Your Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar (Same as Home) -->
+    <header>
+        <div class="top-bar">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <div class="profile-info">
+                <img src="anonymous-profile.png" alt="Profile" class="profile-pic">
+                <p>Username</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-header">
+        <img src="anonymous-profile.png" alt="Profile Picture" class="profile-pic-large">
+        <h2>John Doe</h2>
+        <p>🇺🇸 United States</p>
+        <p>Harvard University</p>
+        <button class="modify-button">Modify <img src="pencil-icon.svg" class="pencil-icon" alt="Modify"></button>
+    </section>
+
+    <!-- Main Content Area (Scrollable) -->
+    <main class="profile-content">
+        <!-- Grades Section -->
+        <section class="profile-section">
+            <h3>Grades</h3>
+            <button class="modify-button">Modify <img src="pencil-icon.svg" class="pencil-icon" alt="Modify"></button>
+            <p>Math: A</p>
+            <p>English: A+</p>
+            <p>Physics: A-</p>
+        </section>
+
+        <!-- Test Scores Section -->
+        <section class="profile-section">
+            <h3>Test Scores</h3>
+            <button class="modify-button">Modify <img src="pencil-icon.svg" class="pencil-icon" alt="Modify"></button>
+            <p>SAT: 1500</p>
+            <p>ACT: 34</p>
+        </section>
+
+        <!-- Extracurriculars & Awards Section -->
+        <section class="profile-section">
+            <h3>Extracurricular Activities (ECs) & Awards</h3>
+            <button class="modify-button">Modify <img src="pencil-icon.svg" class="pencil-icon" alt="Modify"></button>
+
+            <div class="ec-item">
+                <h4>EC Category: Debate Team</h4>
+                <p>Description: Captain of the school's debate team.</p>
+                <p>Hours: 10 hours/week</p>
+                <p>Started: September 2020</p>
+            </div>
+
+            <div class="ec-item">
+                <h4>EC Category: Volunteer Work</h4>
+                <p>Description: Volunteered at a local animal shelter.</p>
+                <p>Hours: 5 hours/week</p>
+                <p>Started: June 2021</p>
+            </div>
+        </section>
+
+        <!-- Essays Section -->
+        <section class="profile-section">
+            <h3>Essays</h3>
+            <button class="modify-button">Modify <img src="pencil-icon.svg" class="pencil-icon" alt="Modify"></button>
+            <p>Manage Essay Visibility <button class="toggle-visibility">Public/Private</button></p>
+        </section>
+
+        <!-- Languages Section -->
+        <section class="profile-section">
+            <h3>Languages Spoken</h3>
+            <button class="modify-button">Modify <img src="pencil-icon.svg" class="pencil-icon" alt="Modify"></button>
+            <p>English - Native</p>
+            <p>Spanish - Advanced</p>
+            <p>French - Intermediate</p>
+        </section>
+    </main>
+
+    <!-- Bottom Navigation Bar (Same as Home) -->
+    <footer>
+        <div class="bottom-bar">
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                Messages
+            </span>
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M4 12v4a2 2 0 0 0 2 2h3"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                Tools
+            </span>
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                Contacts
+            </span>
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M4 12v4a2 2 0 0 0 2 2h3"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                Posts
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
