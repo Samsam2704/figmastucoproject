@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StuCo - Search Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Navigation Bar (Same as Home) -->
+    <header>
+        <div class="top-bar">
+            <input type="text" class="search-bar" placeholder="Search...">
+            <div class="profile-info">
+                <img src="anonymous-profile.png" alt="Profile" class="profile-pic">
+                <p>Username</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Filter Section -->
+    <div class="filter-container">
+        <select class="filter" id="filter-country">
+            <option value="">Country</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+            <!-- Add more countries here -->
+        </select>
+
+        <select class="filter" id="filter-college">
+            <option value="">Current College</option>
+            <option value="harvard">Harvard University</option>
+            <option value="stanford">Stanford University</option>
+            <option value="mit">MIT</option>
+            <!-- Add more colleges here -->
+        </select>
+
+        <select class="filter" id="filter-connection">
+            <option value="">Degree of Connection</option>
+            <option value="close">Close</option>
+            <option value="acquaintance">Acquaintance</option>
+            <option value="distant">Distant</option>
+        </select>
+
+        <select class="filter" id="filter-year">
+            <option value="">Current Year of Study</option>
+            <option value="freshman">Freshman</option>
+            <option value="sophomore">Sophomore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+        </select>
+
+        <select class="filter" id="filter-degree">
+            <option value="">Current Degree</option>
+            <option value="bachelor">Bachelor</option>
+            <option value="master">Master</option>
+            <option value="phd">PhD</option>
+        </select>
+
+        <select class="filter" id="filter-highschool-system">
+            <option value="">High School System</option>
+            <option value="ib">International Baccalaureate (IB)</option>
+            <option value="ap">AP (Advanced Placement)</option>
+            <option value="a-levels">A-Levels</option>
+            <!-- Add more high school systems here -->
+        </select>
+    </div>
+
+    <!-- Main Content Area for Search Results -->
+    <main class="search-results-container">
+        <!-- Example Search Result Item -->
+        <div class="result-item">
+            <img src="anonymous-profile.png" alt="Profile" class="result-pic">
+            <div class="result-info">
+                <p class="result-name">John Doe</p>
+                <p class="result-details">Harvard University, USA | Bachelor | Junior</p>
+            </div>
+        </div>
+
+        <div class="result-item">
+            <img src="anonymous-profile.png" alt="Profile" class="result-pic">
+            <div class="result-info">
+                <p class="result-name">Jane Smith</p>
+                <p class="result-details">Stanford University, USA | Master | Senior</p>
+            </div>
+        </div>
+
+        <!-- Add more search result items here -->
+    </main>
+
+    <!-- Bottom Navigation Bar (Same as Home) -->
+    <footer>
+        <div class="bottom-bar">
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                Messages
+            </span>
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M4 12v4a2 2 0 0 0 2 2h3"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                Tools
+            </span>
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                Contacts
+            </span>
+            <span class="nav-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M4 12v4a2 2 0 0 0 2 2h3"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                Posts
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
